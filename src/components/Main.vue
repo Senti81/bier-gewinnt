@@ -4,12 +4,12 @@
       <v-col
         v-for="n in 16"
         :key="n"
-        class="d-flex child-flex"
+        class="d-sm-flex child-flex"
         cols="3"
       >           
         <v-img
           :src="`/img/${n}.png`"
-          aspect-ratio="1.67"
+          aspect-ratio="1"
           class="grey lighten-2"
           @click="sendEmail(n)"
         >
@@ -19,11 +19,11 @@
               align="center"
               justify="center"
             >
-            <div>
-              <p class="overline">
-                {{tasks[n-1].description}}
-              </p>
-            </div>
+              <div class="ma-1">
+                <h6 class="text-center">
+                  {{tasks[n-1].description}}
+                </h6>
+              </div>
             </v-row>
           </template>
         </v-img>
@@ -33,16 +33,6 @@
 </template>
 
 
-<style scoped>
-  .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-</style>
 
 <script>
 export default {
