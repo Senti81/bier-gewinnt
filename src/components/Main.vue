@@ -50,7 +50,7 @@ export default {
   data:() => ({
     cols: 4,
     rows: 4,
-    email: "test@live.de",
+    email: "biergewinnt0@gmail.com",
     tasks: [
       {
         description: 'Lorem Ipsum A1',
