@@ -1,33 +1,32 @@
 <template>
-  <v-container class="mt-6">
-    <v-row
-      v-for="(y, iY) in rows" :key="iY"
-      no-gutters
-    >
+  <v-container>
+    <v-row>
       <v-col
-        v-for="(x, iX) in cols" :key="iX"
-        cols="2"
-      >
-        <v-card       
-          class="text-center"
-          outlined
-          tile
-          elevation="6"
-          width="200"
-          height="100"
-          @click="sendEmail(x, y, tasks[iX + cols*iY])"
+        v-for="n in 16"
+        :key="n"
+        class="d-flex child-flex"
+        cols="3"
+      >           
+        <v-img
+          :src="`/img/${n}.png`"
+          aspect-ratio="1.67"
+          class="grey lighten-2"
+          @click="sendEmail(n)"
         >
-          <v-img v-if="tasks[iX + cols*iY].done"
-            :src="`/img/${x}-${y}.jpg`"
-            height="100px"            
-          >
-          </v-img>
-          <div class="center" v-else>
-            <p class="subtitle-2">
-              {{tasks[iX + cols*iY].description}}
-            </p>
-          </div>
-        </v-card>
+          <template v-slot:placeholder>
+            <v-row
+              class="fill-height ma-0"
+              align="center"
+              justify="center"
+            >
+            <div>
+              <p class="overline">
+                {{tasks[n-1].description}}
+              </p>
+            </div>
+            </v-row>
+          </template>
+        </v-img>
       </v-col>
     </v-row>
   </v-container>
@@ -62,7 +61,7 @@ export default {
       },
       {
         description: 'Lorem Ipsum A3',
-        done: false,        
+        done: true,        
       },
       {
         description: 'Lorem Ipsum A4',
@@ -119,9 +118,9 @@ export default {
     ]
   }),
   methods: {
-    sendEmail(x, y, index) {
-      if(!index.done) {
-        window.open('mailto:'+this.email+'?subject='+index.description+' ('+x+'-'+y+')')
+    sendEmail(index) {
+      if(!this.tasks[index-1].done) {
+        window.open('mailto:'+this.email+'?subject='+this.tasks[index-1].description)
       }
     }
   }
