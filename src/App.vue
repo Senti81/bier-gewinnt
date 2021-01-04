@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class="amber lighten-5">
       <Header/>
       <Main/>
     </v-main>

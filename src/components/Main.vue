@@ -1,118 +1,60 @@
 <template>
-  <v-container>
+  <v-container
+    fluid
+    class="pa-6"
+    >
     <v-row>
       <v-col
-        v-for="n in 16"
+        v-for="n in 42"
         :key="n"
-        class="d-sm-flex child-flex"
-        cols="3"
-      >           
-        <v-img
-          :src="`/img/${n}.png`"
-          aspect-ratio="1"
-          class="grey lighten-2"
-          @click="sendEmail(n)"
-        >
-          <template v-slot:placeholder>
-            <v-row
-              class="fill-height ma-0"
-              align="center"
-              justify="center"
+        class="d-sm-flex child-flex pa-1"
+        cols="2"
+      >         
+        <v-hover v-slot="{ hover }">
+          <v-card
+            :elevation="hover ? 12 : 2 "
+            :class="{ 'on-hover': hover }"
             >
-              <div class="ma-1">
-                <h6 class="text-center">
-                  {{tasks[n-1].description}}
-                </h6>
-              </div>
-            </v-row>
-          </template>
-        </v-img>
+            <v-img
+              :src="`/img/${n}.jpg`"
+              aspect-ratio="1"
+              @click="sendEmail(n)"
+            >
+              <template v-slot:placeholder>
+                <v-card class="fill-height">
+                  <v-card-text class="blue lighten-5 fill-height content">
+                    {{n}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aut.
+                  </v-card-text>
+                </v-card>
+              </template>
+            </v-img>
+          </v-card>
+        </v-hover>  
       </v-col>
     </v-row>
   </v-container>
 </template>
 
-
+<style lang="css">
+  .content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
 
 <script>
 export default {
   data:() => ({
-    cols: 4,
-    rows: 4,
-    email: "biergewinnt0@gmail.com",
-    tasks: [
-      {
-        description: 'Lorem Ipsum A1',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum A2',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum A3',
-        done: true,        
-      },
-      {
-        description: 'Lorem Ipsum A4',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum B1',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum B2',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum B3',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum B4',
-        done: false,        
-      },
-            {
-        description: 'Lorem Ipsum C1',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum C2',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum C3',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum C4',
-        done: false,        
-      },
-            {
-        description: 'Lorem Ipsum D1',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum D2',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum D3',
-        done: false,        
-      },
-      {
-        description: 'Lorem Ipsum D4',
-        done: false,        
-      },
-    ]
+    cols: 6,
+    rows: 7,
+    email: "biergewinnt0@gmail.com",   
   }),
   methods: {
     sendEmail(index) {
-      if(!this.tasks[index-1].done) {
-        window.open('mailto:'+this.email+'?subject='+this.tasks[index-1].description)
-      }
-    }
-  }
+      window.open('mailto:'+this.email+'?subject='+index)
+    },    
+  }  
 }
 </script>
