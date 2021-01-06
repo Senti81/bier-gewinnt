@@ -11,17 +11,18 @@
           <v-dialog v-model="tasks[n-1].dialog" max-width="500">
             <template v-slot:activator="{ on, attrs }">
               <v-card class="
+                ma-auto
                 fill-height                  
                 text-lg-h5"                  
                 v-bind="attrs"
                 v-on="on"
-                elevation="4"
+                outlined                              
                 :color="setColor(n)">
 
                 <v-card-text v-if="!isDone(n)" class="fill-height content text-lg-h6">
                   {{createPreview(n)}}
                 </v-card-text>
-                <v-card-title v-else class="fill-height font-weight-black content">
+                <v-card-title v-else class="fill-height content pa-0">
                   {{tasks[n-1].owner}}
                 </v-card-title>
               </v-card>
