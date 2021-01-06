@@ -28,7 +28,20 @@
               </v-card>
             </template>              
             <v-card color="amber lighten-5">
-              <v-img v-if="isDone(n)" :src="tasks[n-1].src" />
+              <v-img v-if="isDone(n)" :src="tasks[n-1].src" :lazy-src="tasks[n-1].src">
+                <template v-slot:placeholder>
+                  <v-row
+                    class="fill-height ma-0"
+                    align="center"
+                    justify="center"
+                  >
+                    <v-progress-circular
+                      indeterminate
+                      color="grey lighten-5"
+                    ></v-progress-circular>
+                  </v-row>
+                </template>
+              </v-img>
               <v-card-text v-else class="pa-5">
                 <h3 class="content">
                   {{tasks[n-1].text}}
