@@ -1,26 +1,18 @@
 <template>
-  <v-container>
-    <h2 class="text-center">
-      🍻 Bier gewinnt 🍻 
-    </h2>
-    <p>
-      Ziel: 4 Aufgaben in einer Reihe erfüllen
-      (Horizonal / vertikal / diagonal)
-    </p>
-    <p>
-      Regeln: Erfülle eine Aufgabe indem du auf sie klickst 
-      und ein Beweisfoto per Mail schickst 
-    </p>
-    <p>
-      Hinweis: Auf dem Foto muss eindeutig zu erkennen sein, 
-      von wem es stammt. (Idealerweise solltest Du auf dem Foto
-      selbst mit drauf sein)
-    </p>
-  </v-container>
+  <div>
+    <v-app-bar
+      color="red accent-4"
+      dense
+      dark
+    >
+    <v-toolbar-title class="font-italic">Work in Progress</v-toolbar-title>
+    </v-app-bar>
+    <h1 class="text-center pt-6">🍻 Bier Gewinnt 🍻 </h1>
+  </div>
 </template>
 
 <script>
 export default {
   
-}
+  }
 </script>

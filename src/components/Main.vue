@@ -337,7 +337,7 @@ export default {
     },
     sendEmail(n) {
       this.tasks[n-1].dialog = false
-      window.open('mailto:'+this.email+'?subject='+n)    
+      window.open('mailto:'+this.email+'?subject=Lösung für Nr. '+n)    
     },
     setColor(n) {
       return (this.tasks[n-1].src === null) ? 'grey lighten-1' : this.tasks[n-1].color
@@ -348,6 +348,7 @@ export default {
         case 'sm': return this.tasks[n-1].text.substring(0, 22) + "..."
         case 'md': return this.tasks[n-1].text.substring(0, 32) + "..."
         case 'lg': return this.tasks[n-1].text.substring(0, 47) + "..."
+        case 'xl': return this.tasks[n-1].text.substring(0, 127)
       }        
       return this.tasks[n-1].text
     }
