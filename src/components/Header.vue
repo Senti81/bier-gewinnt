@@ -7,7 +7,7 @@
     >
     <v-toolbar-title class="font-italic">Work in Progress</v-toolbar-title>
     </v-app-bar>
-    <h1 class="text-center pt-6">🍻 Bier Gewinnt 🍻 </h1>
+    <h1 class="text-center pt-3">🍻 Bier Gewinnt 🍻 </h1>
   </div>
 </template>
 

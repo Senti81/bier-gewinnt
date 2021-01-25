@@ -1,8 +1,11 @@
 <template>
   <v-container class="pa-auto" height="500">
+    <hr class="black">
+    <p class="text-left my-4">Nachfolgend ein Beispiel, wie das Spielfeld im Laufe des Spiels aussehen könnte:</p>
+    <p class="text-left my-4">Klickt auf ein Feld, um die Funktionalität zu testen.</p>
     <v-row>
       <v-col
-        v-for="n in 36"
+        v-for="n in tasks.length"
         :key="n"
         class="d-lg-flex child-flex pa-1"
         cols="2"
@@ -16,9 +19,9 @@
                 text-lg-h5"                  
                 v-bind="attrs"
                 v-on="on"
-                outlined                              
-                :color="setColor(n)">
-
+                outlined
+                :color="setColor(n)"
+              >
                 <v-card-text v-if="!isDone(n)" class="fill-height content text-lg-h6">
                   {{createPreview(n)}}
                 </v-card-text>
@@ -28,6 +31,10 @@
               </v-card>
             </template>              
             <v-card color="amber lighten-5">
+              <v-card-title>
+                {{isDone(n) ? "Beispiel: Aufgabe erfüllt" : "Beispiel: Aufgabe offen"}}
+              </v-card-title>
+              <v-divider/>
               <v-img v-if="isDone(n)" :src="tasks[n-1].src" :lazy-src="tasks[n-1].src">
                 <template v-slot:placeholder>
                   <v-row
@@ -37,11 +44,11 @@
                   >
                     <v-progress-circular
                       indeterminate
-                      color="grey lighten-5"
+                      color="grey lighten-1"
                     ></v-progress-circular>
                   </v-row>
                 </template>
-              </v-img>
+              </v-img>                        
               <v-card-text v-else class="pa-5">
                 <h3 class="content">
                   {{tasks[n-1].text}}
@@ -49,6 +56,7 @@
               </v-card-text>
               <v-divider/>
               <v-card-actions>
+
                 <v-spacer></v-spacer>
                 <v-btn color="primary" text @click="tasks[n-1].dialog = false">
                   Zurück
@@ -62,6 +70,12 @@
         </v-responsive>
       </v-col>
     </v-row>
+
+    <!-- Feedback -->
+    <v-btn fab fixed small top right color="primary" @click="sendFeedback">            
+      <v-icon>mdi-email</v-icon>
+    </v-btn>
+
   </v-container>
 </template>
 
@@ -80,255 +94,257 @@ export default {
     email: "biergewinnt0@gmail.com",
     tasks: [
       {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: 'img/pexels-chokniti-khongchum-2280571.jpg',
-        owner: 'CK',
+        text: 'Hier steht der Aufgabentext',
+        src: 'img/image3.jpg',
+        owner: 'S3',
+        color: 'green darken-2',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
+        text: 'Hier steht der Aufgabentext',
         src: null,
-        owner: 'FB',
-        color: '#0000FF'
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: 'img/pexels-stein-egil-liland-3408744.jpg',
-        owner: 'EL',
-        color: '#FEEF44',
-        dialog: false
-      },
-      {
-        text: '123456789 123456789 123456789 123456789 123456789',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet.',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#CCCCCC',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
+        owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: 'img/pexels-paul-ijsendoorn-33041.jpg',
-        owner: 'PI',
-        color: '#12AB34',
-        dialog: false
-      },
-            {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: 'img/pexels-chokniti-khongchum-2280571.jpg',
-        owner: 'CK',
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
+        text: 'Hier steht der Aufgabentext',
         src: null,
-        owner: 'Foo Bar',
-        color: '#0000FF'
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: 'img/pexels-stein-egil-liland-3408744.jpg',
-        owner: 'EL',
-        color: '#FEEF44',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, at quidem fuga id distinctio omnis?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, at quidem fuga id distinctio omnis?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#CCCCCC',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
+        owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, at quidem fuga id distinctio omnis?',
-        src: 'img/pexels-paul-ijsendoorn-33041.jpg',
-        owner: 'PI',
-        color: '#12AB34',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
+        text: 'Hier steht der Aufgabentext',
         src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet.',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#CCCCCC',
-        dialog: false
-      },
-      {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
+        owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: 'img/pexels-paul-ijsendoorn-33041.jpg',
-        owner: 'PI',
-        color: '#12AB34',
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
+        text: 'Hier steht der Aufgabentext',
+        src: 'img/image3.jpg',
+        owner: 'S3',
+        color: 'green darken-2',
         dialog: false
       },
       {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
+        text: 'Hier steht der Aufgabentext',
         src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
+        owner: null,
+        color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
+        text: 'Hier steht der Aufgabentext',
         src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
+        owner: null,
+        color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, non?',
-        src: null,
-        owner: 'Foo Bar',
-        color: '#BCAAA4',
+        text: 'Hier steht der Aufgabentext',
+        src: 'img/image1.jpg',
+        owner: 'S1',
+        color: 'red lighten-2',
         dialog: false
-      }
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: 'img/image1.jpg',
+        owner: 'S4',
+        color: 'amber lighten-2',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: 'img/image1.jpg',
+        owner: 'S1',
+        color: 'red lighten-2',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: 'img/image2.jpg',
+        owner: 'S2',
+        color: 'blue lighten-1',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: 'img/image2.jpg',
+        owner: 'S2',
+        color: 'blue lighten-1',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: 'img/image2.jpg',
+        owner: 'S2',
+        color: 'blue lighten-1',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Hier steht der Aufgabentext',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
     ]
   }),
   methods: {
@@ -339,8 +355,11 @@ export default {
       this.tasks[n-1].dialog = false
       window.open('mailto:'+this.email+'?subject=Lösung für Nr. '+n)    
     },
+    sendFeedback() {
+      window.open('mailto:'+this.email+'?subject=Feedback')    
+    },
     setColor(n) {
-      return (this.tasks[n-1].src === null) ? 'grey lighten-1' : this.tasks[n-1].color
+      return (this.tasks[n-1].src === null) ? 'brown lighten-4' : this.tasks[n-1].color
     },
     createPreview(n) {
       switch (this.$vuetify.breakpoint.name) {
