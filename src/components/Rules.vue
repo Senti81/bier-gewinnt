@@ -1,6 +1,6 @@
 <template>
   <v-container class="px-auto">
-    <p class="text-left">Bei Fragen oder Feedback, nutzt bitte den Button oben rechts. Ich werde die Fragen dann auf der Seite als FAQ veröffentlichen.</p>
+    <p class="text-left">Bei Fragen oder Feedback, nutzt bitte den Button oben rechts. Ich werde die Fragen in den FAQs ergänzen.</p>
     <hr class="black my-5">
     <v-expansion-panels accordion>
       <v-expansion-panel class="amber lighten-5">
@@ -8,7 +8,7 @@
           Konzept / Idee
         </v-expansion-panel-header>
         <v-expansion-panel-content>
-          Eine Komination aus Bingo / Vier Gewinnt und Schnitzeljagd als kompetetives Echtzeitspiel im "Real Life"
+          Eine Komination aus Bingo / Vier Gewinnt und Schnitzeljagd / Foto Rallye als kompetetives Echtzeitspiel im "Real Life"
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel class="amber lighten-5">
@@ -32,7 +32,7 @@
           in vertikaler, horizontaler oder diagonaler Reihe für sich entscheiden kann, gewinnt dieser Spieler.
         </v-expansion-panel-content>
       </v-expansion-panel>
-       <v-expansion-panel class="amber lighten-5">
+       <!-- <v-expansion-panel class="amber lighten-5">
         <v-expansion-panel-header>
           Zielgruppe
         </v-expansion-panel-header>
@@ -40,7 +40,7 @@
           Das Spiel ist erstmal nur für die Biere ohne Grenzen Truppe, da bei zu vielen Spielern das Spielfeld zu klein wäre.<br>
           Kann in Zukunft natürlich aber auch erweitert werden.
         </v-expansion-panel-content>
-      </v-expansion-panel>
+      </v-expansion-panel> -->
       <v-expansion-panel class="amber lighten-5">
         <v-expansion-panel-header>
           Spielablauf          
@@ -72,11 +72,36 @@
           Beginn, Dauer und Ende
         </v-expansion-panel-header>
         <v-expansion-panel-content class="text-justify">
-          Geplanter Start ist im Frühjahr 2021 (abhängig von den Corona-Maßnahmen)<br>
+          Geplanter Start ist im Frühjahr 2021 (sobald wir wieder einigermaßen uneingeschränkt nach draußen dürfen)<br>
           Das Spiel soll dann 4 Wochen lang verfügbar sein.
           Sollte bis dahin kein Sieger feststehen, endet das Spiel unentschieden.
         </v-expansion-panel-content>
       </v-expansion-panel>
+      <!-- <v-expansion-panel class="amber lighten-5">
+        <v-expansion-panel-header>
+          FAQ
+        </v-expansion-panel-header>
+        <v-expansion-panel-content class="text-justify">
+          <v-list-item two-line>
+            <v-list-item-content>
+              <v-list-item-title>Können Teams gebildet werden ?</v-list-item-title>
+              <v-list-item-subtitle>Ja, einfach Bescheid geben wer zusammen spielt.</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item two-line>
+            <v-list-item-content>
+              <v-list-item-title>Wenn meine Lösung falsch ist, kann ich erneut eine einsenden?</v-list-item-title>
+              <v-list-item-subtitle>Nein, man hat immer nur einen Versuch pro Aufgabe. Also strengt euch an 😋</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item two-line>
+            <v-list-item-content>
+              <v-list-item-title>Kann ich mehrere Aufgaben gleichzeitig erfüllen?</v-list-item-title>
+              <v-list-item-subtitle>Um das ganze etwas zu entschleunigen, soll immer nur 1 Aufgabe pro Tag erfüllt werden dürfen.</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-expansion-panel-content>
+      </v-expansion-panel> -->
     </v-expansion-panels>    
   </v-container>
 </template>

@@ -1,20 +1,32 @@
-Autokennzeichen mit Geburtsjahr
-Autokennzeichen mit Initialen
-Schnapszahl-Hausnummer (3-stellig)
-Lebensmittel mit Ablaufdatum an Geburtstag (Tag + Monat)
-Kassenzettel mit Summe: 15,16 €
-3 Dosenbiere in den Nationalfarben
-Öffentliche Uhrzeit (1:11)
-Öffentliche Uhrzeit (15:16)
-Fahrzeug mit Parkkralle
-mind. 3 Elektroscooter unterschiedlicher Marken
 Klingelschild Name?
-Hinweisschilder zu Straßeneinbauten
   3 unterschiedliche
   Wasser
   Erdgas
-  Hydrant
+  
+Leicht:
+  Zebrastreifen mit x Streifen ( 5 / 6 ?)
+  Schnapszahl-Hausnummer (3-stellig)
+  3 Dosenbiere in den Nationalfarben
+  Öffentliche Uhrzeit (1:11)
+  Öffentliche Uhrzeit (15:16)
+  Strassenschild mit Name eines Tieres (Pferdmengesstr., Iltisstr.)
+  Strassenschild mit Farbe (Grünweg, Am Grauen Stein)
+  Finde ein "Wir müssen draußen bleiben" Schild
 
-Strassenschild mit
-  Name eines Tieres (Pferdmengesstr., Iltisstr.)
-  Farbe (Grünweg, Am Grauen Stein)
+Mittel:
+  Finde eine Person, die mindestens 2 Hunde an der/n Leine/n mit sich führt.
+  Autokennzeichen mit Geburtsjahr
+  Autokennzeichen mit Initialen
+  Kassenzettel mit Summe: 15,16 €
+  Preisschild für 1,11€
+  mind. 3 Elektroscooter unterschiedlicher Marken
+  Speisekarte (Aushang) wo ein 0,2er Kölsch weniger als 1,80 € kostet
+  Eventplakate mit Datum / Namen
+  Finde ein Hinweisschild zu Straßeneinbauten (Hydrant) mit mind. 10,0 Meter Abstand
+
+Schwer:
+  Lebensmittel mit Ablaufdatum an Geburtstag (Tag + Monat)
+  Fahrzeug mit Parkkralle
+  Finde eine Klingeltafel, wo exakt 11 Namen drauf stehen
+  Baue einen Turm aus Lebensmittel
+  
