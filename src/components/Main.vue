@@ -1,12 +1,5 @@
 <template>
   <v-container class="pa-auto" height="500">
-    <hr class="black">
-    <p class="text-left my-4">Nachfolgend ein Beispiel, wie das Spielfeld im Laufe des Spiels aussehen könnte.</p>
-    <p class="text-left my-4">Graue Felder sind ungelöste Aufgaben. Sie können von den Spielern gelöst werden.
-      Bunte Felder sind vom Speier bereits gelöste Aufgaben. Die Initialen des Spielers werden hier angezeigt.
-      Beim Klick auf das Feld sieht man das eingesendete Foto mit der Lösung.
-    </p>
-    <p class="text-left my-4">Klickt auf ein Feld, um die Funktionalität zu testen.</p>
     <v-row>
       <v-col
         v-for="n in tasks.length"
@@ -74,12 +67,6 @@
         </v-responsive>
       </v-col>
     </v-row>
-
-    <!-- Feedback -->
-    <v-btn fab fixed small top right color="primary" @click="sendFeedback">            
-      <v-icon>mdi-email</v-icon>
-    </v-btn>
-
   </v-container>
 </template>
 

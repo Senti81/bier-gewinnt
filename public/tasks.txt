@@ -6,7 +6,6 @@ Klingelschild Name?
 Leicht:
   Zebrastreifen mit x Streifen ( 5 / 6 ?)
   Schnapszahl-Hausnummer (3-stellig)
-  3 Dosenbiere in den Nationalfarben
   Öffentliche Uhrzeit (1:11)
   Öffentliche Uhrzeit (15:16)
   Strassenschild mit Name eines Tieres (Pferdmengesstr., Iltisstr.)
@@ -17,16 +16,56 @@ Mittel:
   Finde eine Person, die mindestens 2 Hunde an der/n Leine/n mit sich führt.
   Autokennzeichen mit Geburtsjahr
   Autokennzeichen mit Initialen
-  Kassenzettel mit Summe: 15,16 €
   Preisschild für 1,11€
   mind. 3 Elektroscooter unterschiedlicher Marken
-  Speisekarte (Aushang) wo ein 0,2er Kölsch weniger als 1,80 € kostet
   Eventplakate mit Datum / Namen
   Finde ein Hinweisschild zu Straßeneinbauten (Hydrant) mit mind. 10,0 Meter Abstand
+  Einkaufswagen in freie Wildbahn
 
 Schwer:
   Lebensmittel mit Ablaufdatum an Geburtstag (Tag + Monat)
   Fahrzeug mit Parkkralle
   Finde eine Klingeltafel, wo exakt 11 Namen drauf stehen
   Baue einen Turm aus Lebensmittel
+  
+
+Thema Bier:
+  Kassenzettel mit Summe: 15,16 €
+  Speisekarte (Aushang) wo ein 0,2er Kölsch 1,50 € oder weniger kostet
+  Craft Biere mit dem Namen Köln im Namen
+  Trinke ein Bier, das mit dem gleichen Buchstaben beginnt wie der aktuelle Wochentag
+  Genieße ein Bier im Freien auf einer gestifteten Parkbank
+  Besitze 5 Bierflaschen in unterschiedlichen Formen / Größen
+  Besitze ein Bier, welches in dem Monat deines Geburtstages abläuft 
+    (Und nicht vergessen das Bier rechtzeitig zu trinken. Sonst: Disqualifikation wegen Bierquälung!)
+  
+  Trinke vor eine Gaststätte das Bier, welches dort ausgeschenkt wird
+
+  Dosen:
+  3 Dosenbiere in den Nationalfarben
+  Baue einen Turm aus Dosenbieren (Basis 4)
+        ()
+       ()()
+      ()()()
+     ()()()()
+  Bierdeckel 
+    Von 5 unterschiedlichen Kölschsorten
+    Baue eine Pyramide aus Bierdeckeln (Basis 3)
+  
+  Kronkorken
+    Schreibe deine Initialen mit Kronkorken
+
+
+
+Rätsel Stories:
+  Deine ganzen Biervorräte sind plötzlich schlecht geworden.
+  Nur EINE der folgenden Aussage ist wahr.
+
+  Wasser: Hefe war's!
+  Hopfen: Wasser sagt die Wahrheit (x)
+  Malz: Wenn Wasser lügt, dann lügt Hopfen auch
+  Hefe: Hopfen war es nicht
+
+  Welche Zutat war dafür verantwortlich?
+
   
