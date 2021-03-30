@@ -1,59 +1,75 @@
-Klingelschild Name?
-  3 unterschiedliche
-  Wasser
-  Erdgas
+Öffentliche Uhrzeit (23:04)
+Öffentliche Uhrzeit (15:16)
+Schnapszahl-Hausnummer (3-stellig)
+Preisschild für 1,11€
+Lebensmittel mit Ablaufdatum an Geburtstag (Tag + Monat)
+Kassenzettel mit Summe: 15,16€ oder 23,04€
+Kfz-Kennzeichen mit einer der folgenden Zahlen: 04, 15, 16, 23, 1516, 2304
+Speisekarte (Aushang) wo ein 0,2er Kölsch 1,50 € oder weniger kostet
+Craft Biere mit 'Köln' im Namen
+Trinke ein Bier, das mit dem gleichen Buchstaben beginnt wie der aktuelle Wochentag
+Genieße ein Bier im Freien auf einer gestifteten Parkbank
+Besitze 5 Bierflaschen in unterschiedlichen Formen / Größen
+Besitze ein Bier, welches in deinem Geburtsmonat abläuft (Und nicht vergessen das Bier rechtzeitig zu trinken. Sonst: Disqualifikation wegen Bierquälerei!)
+Trinke vor eine Gaststätte das Bier, welches dort ausgeschenkt wird
+Trinke ein Bier vor einem Zigarettenatomaten
+Stelle ein Pils neben einen Pilz (Im Wald, dort wo die Tannen zapfen 😂😂😂)
+Hinweisschild zu Strasseneinbauten: Finde eine Schnapszahl
+Trinke ein Bier vor einem Verhekrsschild der entsprechenden Farbe:    Erläuterung: Blau: z.B. Gaffel / grün: z.B. Gilden, weiss/rot: z.B. Reissdorf, Früh
+Bier mit IBU > 50
+3 Dosenbiere in den Nationalfarben
+Baue einen Turm aus Dosenbieren (Basis 4)
+Bierdeckel von 5 unterschiedlichen Kölschsorten
+Baue eine Pyramide aus Bierdeckeln (Basis 3)
+Schreibe deine Initialen mit Kronkorken
+Einkaufswagen in freie Wildbahn. Reinsetzten und Bier trinken
+mind. 3 Elektroscooter unterschiedlicher Marken
+Eventplakate mit Datum / Namen
+Fahrzeug mit Parkkralle
+Zebrastreifen mit x Streifen ( 5 / 6 ?)
+Strassenschild mit Name eines Tieres (Pferdmengesstr., Iltisstr.)
+Strassenschild mit Farbe (Grünweg, Am Grauen Stein)
+Trinke ein Bier unter einem Vogelhäuschen
+Trinke ein Bier vor einem Straßenschild, das mit dem selben Buchstaben beginnt, wie der Name der Straße
+Schreibe mit Steinen das Wort 'Bier'
+
+// TODO:
+  Regel in die Navigation übernehmen
+  Anderes Icon für die Regeln nehmen
+  Hinweis darauf, dass alle Aufgaben in frei zugänglichen öffentlichen Plätzen erfüllt werden müssen, ausser sie sind als "privat" gekennzeichnet.
   
+
 Leicht:
-  Zebrastreifen mit x Streifen ( 5 / 6 ?)
-  Schnapszahl-Hausnummer (3-stellig)
-  Öffentliche Uhrzeit (1:11)
-  Öffentliche Uhrzeit (15:16)
-  Strassenschild mit Name eines Tieres (Pferdmengesstr., Iltisstr.)
-  Strassenschild mit Farbe (Grünweg, Am Grauen Stein)
+  
   Finde ein "Wir müssen draußen bleiben" Schild
 
 Mittel:
   Finde eine Person, die mindestens 2 Hunde an der/n Leine/n mit sich führt.
   Autokennzeichen mit Geburtsjahr
   Autokennzeichen mit Initialen
-  Preisschild für 1,11€
-  mind. 3 Elektroscooter unterschiedlicher Marken
-  Eventplakate mit Datum / Namen
-  Finde ein Hinweisschild zu Straßeneinbauten (Hydrant) mit mind. 10,0 Meter Abstand
-  Einkaufswagen in freie Wildbahn
-
+  
+  
+  
+  
 Schwer:
-  Lebensmittel mit Ablaufdatum an Geburtstag (Tag + Monat)
-  Fahrzeug mit Parkkralle
+  
+  
   Finde eine Klingeltafel, wo exakt 11 Namen drauf stehen
-  Baue einen Turm aus Lebensmittel
+    
   
-
-Thema Bier:
-  Kassenzettel mit Summe: 15,16 €
-  Speisekarte (Aushang) wo ein 0,2er Kölsch 1,50 € oder weniger kostet
-  Craft Biere mit dem Namen Köln im Namen
-  Trinke ein Bier, das mit dem gleichen Buchstaben beginnt wie der aktuelle Wochentag
-  Genieße ein Bier im Freien auf einer gestifteten Parkbank
-  Besitze 5 Bierflaschen in unterschiedlichen Formen / Größen
-  Besitze ein Bier, welches in dem Monat deines Geburtstages abläuft 
-    (Und nicht vergessen das Bier rechtzeitig zu trinken. Sonst: Disqualifikation wegen Bierquälung!)
-  
-  Trinke vor eine Gaststätte das Bier, welches dort ausgeschenkt wird
 
   Dosen:
-  3 Dosenbiere in den Nationalfarben
-  Baue einen Turm aus Dosenbieren (Basis 4)
+  
         ()
        ()()
       ()()()
      ()()()()
-  Bierdeckel 
-    Von 5 unterschiedlichen Kölschsorten
-    Baue eine Pyramide aus Bierdeckeln (Basis 3)
+
   
   Kronkorken
-    Schreibe deine Initialen mit Kronkorken
+    
+
+  
 
 
 
