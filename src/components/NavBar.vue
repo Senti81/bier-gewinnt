@@ -13,13 +13,15 @@
     >
       <template v-slot:activator="{on, attrs }">
         <v-btn 
-          icon
+          class="mx-auto transparent"      
           v-bind="attrs"
           v-on="on"
           >          
-          <v-icon>mdi-help-circle</v-icon>
+          <v-icon class="pr-2">mdi-cards</v-icon>
+          Regeln
         </v-btn>
       </template>
+
       <!-- Dialog -->
       <v-card>
         <v-container class="px-auto">
@@ -39,20 +41,7 @@
                 <v-expansion-panel-content>
                   Als erster Spieler 4 Felder in horizontaler / vertikaler / diagonaler Reihe für sich zu gewinnen
                 </v-expansion-panel-content>
-              </v-expansion-panel>     
-              <v-expansion-panel>
-                <v-expansion-panel-header>
-                  Übersicht
-                </v-expansion-panel-header>
-                <v-expansion-panel-content class="text-justify">
-                  Auf einem Spielfeld sind 36 Felder quadratisch angeordnet.
-                  Jedes Feld beinhaltet eine Aufgabe.<br>Die Aufgaben sind in Form einer "Mini-Schnitzeljagd",
-                  so dass der Spieler einen bestimmten Ort finden oder ein bestimmtes Ereignis festhalten muss.<br>
-                  Um diese Aufgabe erfolgreich zu erfüllen, müssen die Spieler ein Foto der Lösung einsenden.
-                  Ist die Lösung korrekt, gewinnt der Spieler das entsprechende Feld.<br>Sobald ein Spieler 4 Felder
-                  in vertikaler, horizontaler oder diagonaler Reihe für sich entscheiden kann, gewinnt dieser Spieler.
-                </v-expansion-panel-content>
-              </v-expansion-panel>
+              </v-expansion-panel>   
               <v-expansion-panel>
                 <v-expansion-panel-header>
                   Spielablauf          
@@ -79,41 +68,36 @@
                   Um ein Foto eindeutig einem Spieler zuordnen zu können ist es wichtig, dass der Spieler selbst auf dem Foto zu sehen ist. 
                 </v-expansion-panel-content>
               </v-expansion-panel>
+
+              <!-- RULES -->
               <v-expansion-panel>
                 <v-expansion-panel-header>
-                  Beginn, Dauer und Ende
+                  Regeln und Hinweise
                 </v-expansion-panel-header>
-                <v-expansion-panel-content class="text-justify">
-                  Geplanter Start ist im Frühjahr 2021 (sobald wir wieder einigermaßen uneingeschränkt nach draußen dürfen)<br>
-                  Das Spiel soll dann 4 Wochen lang verfügbar sein.
-                  Sollte bis dahin kein Sieger feststehen, endet das Spiel unentschieden.
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-              <!-- <v-expansion-panel>
-                <v-expansion-panel-header>
-                  FAQ
-                </v-expansion-panel-header>
-                <v-expansion-panel-content class="text-justify">
-                  <v-list-item two-line>
+                <v-expansion-panel-content class="text-left">
+                  <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title>Können Teams gebildet werden ?</v-list-item-title>
-                      <v-list-item-subtitle>Ja, einfach Bescheid geben wer zusammen spielt.</v-list-item-subtitle>
+                      Die Aufgaben sind grundsätzlich an öffentlichen, frei zugänglichen Orten im Freien zu erfüllen.
+                      Es ist nicht erforderlich irgendwelche Gebäude zu betreten.<br>
+                      <b>Ausnahme:</b>
+                      Ist in der Titelleiste der Aufgabe dieses Symbol angegeben: 🏠 darf die Aufgabe auch von zu Hause aus erfüllt werden.
                     </v-list-item-content>
                   </v-list-item>
-                  <v-list-item two-line>
+                  <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title>Wenn meine Lösung falsch ist, kann ich erneut eine einsenden?</v-list-item-title>
-                      <v-list-item-subtitle>Nein, man hat immer nur einen Versuch pro Aufgabe. Also strengt euch an 😋</v-list-item-subtitle>
+                      Steht bei Aufgabe der Begriff 'Farbcode', bezieht sich dies immer auf die dominierende Farbe des Etikettes.
+                      Bespiel: rot = Reissdorf, weiß = Früh, blau = Gaffel, grün = Gilden, usw.
                     </v-list-item-content>
                   </v-list-item>
-                  <v-list-item two-line>
+                  <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title>Kann ich mehrere Aufgaben gleichzeitig erfüllen?</v-list-item-title>
-                      <v-list-item-subtitle>Um das ganze etwas zu entschleunigen, soll immer nur 1 Aufgabe pro Tag erfüllt werden dürfen.</v-list-item-subtitle>
+                      Um evtl. Vorteile bei der Erfüllung der Aufgaben durch Teams zu kompensieren, darf nur alle x Tage eine Lösung eingesendet werden, wobei x die Größe des Teams darstellt
+                      Wer alleine spielt darf jeden Tag eine Lösung einreichen, ein Team aus 2 Spielern dann nur jeden zweiten Tag, usw.
                     </v-list-item-content>
                   </v-list-item>
                 </v-expansion-panel-content>
-              </v-expansion-panel> -->
+              </v-expansion-panel>
+             
             </v-expansion-panels>  
             <v-card-actions>
           <v-spacer></v-spacer>
@@ -124,9 +108,6 @@
         </v-container>
       </v-card>
     </v-dialog>
-      <v-btn icon>        
-        <v-icon @click="sendFeedback">mdi-email</v-icon>
-      </v-btn>
     </v-app-bar>    
   </div>
 </template>
