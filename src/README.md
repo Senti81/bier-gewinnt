@@ -28,3 +28,10 @@
 ### Features
 * Hilfe-Texte aktualisiert
 * Layout optimiert
+
+# 0.7 (30.03.2021) 
+### Features
+* Countdown Timer eingebaut
+* Felder verschleiert. Aktivierung erst nach Ablauf des Timers
+### Fixes
+* Navigations Menü überarbeitet
