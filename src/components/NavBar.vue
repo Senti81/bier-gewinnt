@@ -58,27 +58,16 @@
                   Dieses Feld ist nun dem entsprechenden Spieler zugeordnet und kann von anderen Spielern nicht mehr beansprucht werden
                 </v-expansion-panel-content>
               </v-expansion-panel>
-              <v-expansion-panel>
-                <v-expansion-panel-header>
-                  Hinweise zu den Aufgaben
-                </v-expansion-panel-header>
-                <v-expansion-panel-content class="text-justify">
-                  Die Aufgaben sind so gestaltet, dass sie sich zwar einfach und machbar anhören aber die Lösung ist nicht immer einfach zu finden.
-                  Das Spiel ist auch darauf ausgelegt, dass es über einen längeren Zeitraum (mehrere Wochen) andauert.
-                  Um ein Foto eindeutig einem Spieler zuordnen zu können ist es wichtig, dass der Spieler selbst auf dem Foto zu sehen ist. 
-                </v-expansion-panel-content>
-              </v-expansion-panel>
 
               <!-- RULES -->
               <v-expansion-panel>
                 <v-expansion-panel-header>
-                  Regeln und Hinweise
+                  Hinweise
                 </v-expansion-panel-header>
                 <v-expansion-panel-content class="text-left">
                   <v-list-item>
                     <v-list-item-content>
-                      Die Aufgaben sind grundsätzlich an öffentlichen, frei zugänglichen Orten im Freien zu erfüllen.
-                      Es ist nicht erforderlich irgendwelche Gebäude zu betreten.<br>
+                      Die Aufgaben sind grundsätzlich an öffentlichen, frei zugänglichen Orten erfüllen.<br>
                       <b>Ausnahme:</b>
                       Ist in der Titelleiste der Aufgabe dieses Symbol angegeben: 🏠 darf die Aufgabe auch von zu Hause aus erfüllt werden.
                     </v-list-item-content>
@@ -87,12 +76,6 @@
                     <v-list-item-content>
                       Steht bei Aufgabe der Begriff 'Farbcode', bezieht sich dies immer auf die dominierende Farbe des Etikettes.
                       Bespiel: rot = Reissdorf, weiß = Früh, blau = Gaffel, grün = Gilden, usw.
-                    </v-list-item-content>
-                  </v-list-item>
-                  <v-list-item>
-                    <v-list-item-content>
-                      Um evtl. Vorteile bei der Erfüllung der Aufgaben durch Teams zu kompensieren, darf nur alle x Tage eine Lösung eingesendet werden, wobei x die Größe des Teams darstellt
-                      Wer alleine spielt darf jeden Tag eine Lösung einreichen, ein Team aus 2 Spielern dann nur jeden zweiten Tag, usw.
                     </v-list-item-content>
                   </v-list-item>
                 </v-expansion-panel-content>
