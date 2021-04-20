@@ -28,8 +28,8 @@
               </v-card>
             </template>              
             <v-card color="amber lighten-5">
-              <v-card-title>
-                {{isDone(n) ? "Beispiel: Aufgabe erfüllt" : "Beispiel: Aufgabe offen"}}
+              <v-card-title v-if="tasks[n-1].home">
+                🏠
               </v-card-title>
               <v-divider/>
               <v-img v-if="isDone(n)" :src="tasks[n-1].src" :lazy-src="tasks[n-1].src">
@@ -53,7 +53,6 @@
               </v-card-text>
               <v-divider/>
               <v-card-actions>
-
                 <v-spacer></v-spacer>
                 <v-btn color="primary" text @click="tasks[n-1].dialog = false">
                   Zurück
@@ -85,252 +84,261 @@ export default {
     email: "biergewinnt0@gmail.com",
     tasks: [
       {
-        text: 'Hier steht der Aufgabentext',
-        src: 'img/image3.jpg',
-        owner: 'S3',
-        color: 'green darken-2',
-        dialog: false
-      },
-      {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Öffentliche Uhr, die 15:16 Uhr anzeigt',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Finde eine Hausnummer mit einer Schnapszahl (3-stellig)',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Uhr, die 23:04 Uhr anzeigt',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Trinke ein Bier vor einem Verkehrsschild der entsprechenden Farbe',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        home: true,
+        text: 'Leere Bierflaschen in 3 unterschiedlichen Farben',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Craft Bier mit Hopfensorte: Simcoe',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
-        src: 'img/image3.jpg',
-        owner: 'S3',
-        color: 'green darken-2',
-        dialog: false
-      },
-      {
-        text: 'Hier steht der Aufgabentext',
+        home: true,
+        text: 'Bierdeckel von 5 unterschiedlichen Biersorten',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Kfz-Kennzeichen mit einer der folgenden Zahlen: 04, 15, 16, 23, 1516 oder 2304',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
-        src: 'img/image1.jpg',
-        owner: 'S1',
-        color: 'red lighten-2',
+        text: 'Speisekarte (Aushang) wo ein 0,2er Kölsch 1,60 € oder weniger kostet',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
         dialog: false
-      },
+      },      
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Bier mit IBU > 50',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Craft Biere mit Köln im Namen',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Trinke ein Bier, das mit dem gleichen Buchstaben beginnt wie der aktuelle Wochentag',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
-        src: 'img/image1.jpg',
-        owner: 'S4',
-        color: 'amber lighten-2',
-        dialog: false
-      },
-      {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Genieße ein Bier im Freien auf einer gestifteten Parkbank',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
-        src: 'img/image1.jpg',
-        owner: 'S1',
-        color: 'red lighten-2',
-        dialog: false
-      },
-      {
-        text: 'Hier steht der Aufgabentext',
+        home: true,
+        text: 'Besitze 5 Bierflaschen in unterschiedlichen Formen / Größen',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Trinke ein Bier in einem Einkaufswagen, der in freier Wildbahn steht',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Kassenzettel mit Summe: 15,16€ oder 23,04€',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Trinke vor eine Gaststätte das Bier, welches dort ausgeschenkt wird',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Trinke ein Bier vor einem Zigarettenatomaten',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Trinke ein Bier vor einem Hinweisschild zu Strasseneinbauten der entsprechenden Farbe',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Trinke ein Radler auf dem Rad. #dontkdrinkanddrive',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Stelle ein Pils neben einen Pilz (Im Wald, dort wo die Tannen zapfen 😂😂😂)',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Besitze ein Bier, welches in deinem Geburtsmonat abläuft (Und nicht vergessen das Bier rechtzeitig zu trinken. Sonst: Disqualifikation wegen Bierquälerei!)',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
-        src: 'img/image2.jpg',
-        owner: 'S2',
-        color: 'blue lighten-1',
-        dialog: false
-      },
-      {
-        text: 'Hier steht der Aufgabentext',
-        src: 'img/image2.jpg',
-        owner: 'S2',
-        color: 'blue lighten-1',
-        dialog: false
-      },
-      {
-        text: 'Hier steht der Aufgabentext',
-        src: 'img/image2.jpg',
-        owner: 'S2',
-        color: 'blue lighten-1',
-        dialog: false
-      },
-      {
-        text: 'Hier steht der Aufgabentext',
+        home: true,
+        text: 'Baue eine Pyramide aus 10 Dosenbieren',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        home: true,
+        text: 'Bierdeckel in 5 unterschiedlichen Formen / Größen',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        home: true,
+        text: 'Baue eine Pyramide aus Bierdeckeln (Basis 3)',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Schreibe deine Initialen mit Kronkorken',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        text: 'Trinke vor einem E-Scooter ein Bier der entsprechenden Farbe',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        home: true,
+        text: 'Balanciere 23 Kronkorken auf 4 Bierflaschen',
         src: null,
         owner: null,
         color: '#CCDD12',
         dialog: false
       },
       {
-        text: 'Hier steht der Aufgabentext',
+        home: true,
+        text: 'Stelle 15 Bierflaschen auf 16 Bierdeckel',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        home: true,
+        text: 'Tɿinʞɘ ɘin 𐐒iɘɿ voɿ ɘinɘm Ƨqiɘϱɘl',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Bier mit dem Name eines Tieres',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Craft Bier mit Hopfensorte: Citra',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Trinke ein Bier unter einem Vogelhäuschen',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Trinke ein Bier vor einem Straßenschild, das mit dem selben Buchstaben beginnt, wie der Name der Straße',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Schreibe mit Steinen das Wort Bier',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        text: 'Bier mit eine Abbildung eines Tieres auf dem Etikett',
         src: null,
         owner: null,
         color: '#CCDD12',
