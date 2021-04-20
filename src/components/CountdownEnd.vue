@@ -1,7 +1,7 @@
 <template>
   <v-container class="pt-5" height="500">
     <h2 class="text-center">Ende in:</h2>
-    <FlipCountdown deadline="2021-05-31 23:59:59"/>
+    <FlipCountdown deadline="2021-05-21 15:16:00"/>
   </v-container>
 </template>
 
