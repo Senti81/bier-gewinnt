@@ -74,7 +74,7 @@
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      Steht bei Aufgabe der Begriff 'Farbcode', bezieht sich dies immer auf die dominierende Farbe des Etikettes.
+                      Steht bei Aufgaben 'Bier [...] der entsprechenden Farbe', bezieht sich dies immer auf die Farbe des Logos, bzw. Etikettes.
                       Bespiel: rot = Reissdorf, weiß = Früh, blau = Gaffel, grün = Gilden, usw.
                     </v-list-item-content>
                   </v-list-item>
