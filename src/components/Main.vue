@@ -257,8 +257,7 @@ export default {
         dialog: false
       },
       {
-        home: true,
-        text: 'Baue eine Pyramide aus Bierdeckeln (Basis 3)',
+        text: 'Trinke vor einem E-Scooter ein Bier der entsprechenden Farbe',
         src: null,
         owner: null,
         color: '#CCDD12',
@@ -272,7 +271,8 @@ export default {
         dialog: false
       },
       {
-        text: 'Trinke vor einem E-Scooter ein Bier der entsprechenden Farbe',
+        home: true,
+        text: 'Baue eine Pyramide aus Bierdeckeln (Basis 3)',
         src: null,
         owner: null,
         color: '#CCDD12',
@@ -362,7 +362,7 @@ export default {
     },
     createPreview(n) {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return "🤔"
+        case 'xs': return "🍺"
         case 'sm': return this.tasks[n-1].text.substring(0, 22) + "..."
         case 'md': return this.tasks[n-1].text.substring(0, 32) + "..."
         case 'lg': return this.tasks[n-1].text.substring(0, 47) + "..."
