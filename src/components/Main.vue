@@ -135,7 +135,8 @@ export default {
         dialog: false
       },
       {
-        text: 'Kfz-Kennzeichen mit einer der folgenden Zahlen: 04, 15, 16, 23, 1516 oder 2304',
+        home: true,
+        text: 'Platziere 15 Kronkorken auf 16 Bierdeckel',
         src: null,
         owner: null,
         color: '#CCDD12',
@@ -287,16 +288,7 @@ export default {
         dialog: false
       },
       {
-        home: true,
-        text: 'Stelle 15 Bierflaschen auf 16 Bierdeckel',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
-        dialog: false
-      },
-      {
-        home: true,
-        text: 'Tɿinʞɘ ɘin 𐐒iɘɿ voɿ ɘinɘm Ƨqiɘϱɘl',
+        text: 'Kfz-Kennzeichen mit einer der folgenden Zahlen: 04, 15, 16, 23, 1516 oder 2304',
         src: null,
         owner: null,
         color: '#CCDD12',
@@ -332,6 +324,14 @@ export default {
       },
       {
         text: 'Schreibe mit Steinen das Wort Bier',
+        src: null,
+        owner: null,
+        color: '#CCDD12',
+        dialog: false
+      },
+      {
+        home: true,
+        text: 'Tɿinʞɘ ɘin 𐐒iɘɿ voɿ ɘinɘm Ƨqiɘϱɘl',
         src: null,
         owner: null,
         color: '#CCDD12',
