@@ -46,7 +46,7 @@
                   </v-row>
                 </template>
               </v-img>                        
-              <v-card-text v-else class="pa-5">
+              <v-card-text class="pa-5">
                 <h3 class="content">
                   {{tasks[n-1].text}}
                 </h3>
