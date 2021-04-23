@@ -92,9 +92,9 @@ export default {
       },
       {
         text: 'Finde eine Hausnummer mit einer Schnapszahl (3-stellig)',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/IMG_20210423_204731652.jpg',
+        owner: 'AW',
+        color: '#42A5F5',
         dialog: false
       },
       {
