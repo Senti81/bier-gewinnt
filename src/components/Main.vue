@@ -289,8 +289,8 @@ export default {
       },
       {
         text: 'Kfz-Kennzeichen mit einer der folgenden Zahlen: 04, 15, 16, 23, 1516 oder 2304',
-        src: null,
-        owner: null,
+        src: 'img/20210423_160210.jpg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },
