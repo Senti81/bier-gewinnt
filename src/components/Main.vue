@@ -324,9 +324,9 @@ export default {
       },
       {
         text: 'Schreibe mit Steinen das Wort Bier',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/20210423_200034.jpg',
+        owner: 'NR',
+        color: '#BA68C8',
         dialog: false
       },
       {
