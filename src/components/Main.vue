@@ -310,9 +310,9 @@ export default {
       },
       {
         text: 'Trinke ein Bier unter einem Vogelhäuschen',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/IMG_20210423_202011_763.jpg',
+        owner: 'AW',
+        color: '#42A5F5',
         dialog: false
       },
       {
@@ -332,9 +332,9 @@ export default {
       {
         home: true,
         text: 'Tɿinʞɘ ɘin 𐐒iɘɿ voɿ ɘinɘm Ƨqiɘϱɘl',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/IMG_20210423_203020671.jpg',
+        owner: 'AW',
+        color: '#42A5F5',
         dialog: false
       },
       {
