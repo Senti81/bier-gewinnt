@@ -121,9 +121,9 @@ export default {
       },
       {
         text: 'Craft Bier mit Hopfensorte: Simcoe',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/IMG_20210423_154328.JPG',
+        owner: 'KG',
+        color: '#FFCD13',
         dialog: false
       },
       {
@@ -180,9 +180,9 @@ export default {
       {
         home: true,
         text: 'Besitze 5 Bierflaschen in unterschiedlichen Formen / Größen',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/IMG_20210423_154725.jpg',
+        owner: 'KG',
+        color: '#FFCD13',
         dialog: false
       },
       {
@@ -207,7 +207,7 @@ export default {
         dialog: false
       },
       {
-        text: 'Trinke ein Bier vor einem Zigarettenatomaten',
+        text: 'Trinke ein Bier vor einem Zigarettenautomaten',
         src: null,
         owner: null,
         color: '#CCDD12',
@@ -236,9 +236,9 @@ export default {
       },
       {
         text: 'Besitze ein Bier, welches in deinem Geburtsmonat abläuft (Und nicht vergessen das Bier rechtzeitig zu trinken. Sonst: Disqualifikation wegen Bierquälerei!)',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/IMG_20210423_154917.jpg',
+        owner: 'KG',
+        color: '#FFCD13',
         dialog: false
       },
       {
@@ -266,8 +266,8 @@ export default {
       },
       {
         text: 'Schreibe deine Initialen mit Kronkorken',
-        src: null,
-        owner: null,
+        src: 'img/20210423_153645.jpg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },
@@ -296,9 +296,9 @@ export default {
       },
       {
         text: 'Bier mit dem Name eines Tieres',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/IMG_20210423_155145.jpg',
+        owner: 'KG',
+        color: '#FFCD13',
         dialog: false
       },
       {
@@ -338,10 +338,10 @@ export default {
         dialog: false
       },
       {
-        text: 'Bier mit eine Abbildung eines Tieres auf dem Etikett',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        text: 'Bier mit einer Abbildung eines Tieres auf dem Etikett',
+        src: 'img/IMG_20210423_155257.jpg',
+        owner: 'KG',
+        color: '#FFCD13',
         dialog: false
       },
     ]
