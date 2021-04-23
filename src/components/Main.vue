@@ -165,9 +165,9 @@ export default {
       },
       {
         text: 'Trinke ein Bier, das mit dem gleichen Buchstaben beginnt wie der aktuelle Wochentag',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/20210423_162140.jpg',
+        owner: 'NR',
+        color: '#BA68C8',
         dialog: false
       },
       {
