@@ -129,9 +129,9 @@ export default {
       {
         home: true,
         text: 'Bierdeckel von 5 unterschiedlichen Biersorten',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/IMG_20210423_203631686.jpg',
+        owner: 'AW',
+        color: '#42A5F5',
         dialog: false
       },
       {
