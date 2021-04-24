@@ -274,9 +274,9 @@ export default {
       {
         home: true,
         text: 'Baue eine Pyramide aus Bierdeckeln (Basis 3)',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/IMG_20210423_211046647.jpg',
+        owner: 'AW',
+        color: '#42A5F5',
         dialog: false
       },
       {
