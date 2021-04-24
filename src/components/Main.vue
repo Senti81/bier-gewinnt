@@ -99,8 +99,8 @@ export default {
       },
       {
         text: 'Uhr, die 23:04 Uhr anzeigt',
-        src: null,
-        owner: null,
+        src: 'img/20210424_230403.jpg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },
@@ -303,8 +303,8 @@ export default {
       },
       {
         text: 'Craft Bier mit Hopfensorte: Citra',
-        src: null,
-        owner: null,
+        src: 'img/20210424_230651.jpg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },
