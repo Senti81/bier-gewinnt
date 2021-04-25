@@ -222,9 +222,9 @@ export default {
       },
       {
         text: 'Trinke ein Radler auf dem Rad. #dontkdrinkanddrive',
-        src: null,
-        owner: null,
-        color: '#CCDD12',
+        src: 'img/IMG-20210425-WA0007.jpg',
+        owner: 'MG',
+        color: '#C62828',
         dialog: false
       },
       {
