@@ -187,8 +187,8 @@ export default {
       },
       {
         text: 'Trinke ein Bier in einem Einkaufswagen, der in freier Wildbahn steht',
-        src: null,
-        owner: null,
+        src: 'img/image-202104271645.jpeg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },
