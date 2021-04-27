@@ -215,8 +215,8 @@ export default {
       },
       {
         text: 'Trinke ein Bier vor einem Hinweisschild zu Strasseneinbauten der entsprechenden Farbe',
-        src: null,
-        owner: null,
+        src: 'img/20210427_160637.jpg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },
