@@ -172,8 +172,8 @@ export default {
       },
       {
         text: 'Genieße ein Bier im Freien auf einer gestifteten Parkbank',
-        src: null,
-        owner: null,
+        src: 'img/20210427_162819.jpg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },
