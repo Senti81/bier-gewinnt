@@ -144,8 +144,8 @@ export default {
       },
       {
         text: 'Speisekarte (Aushang) wo ein 0,2er Kölsch 1,60 € oder weniger kostet',
-        src: null,
-        owner: null,
+        src: 'img/20210428_191417.jpg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },      
@@ -201,8 +201,8 @@ export default {
       },
       {
         text: 'Trinke vor eine Gaststätte das Bier, welches dort ausgeschenkt wird',
-        src: null,
-        owner: null,
+        src: 'img/IMG-20210428-WA0002.jpg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },
@@ -244,8 +244,8 @@ export default {
       {
         home: true,
         text: 'Baue eine Pyramide aus 10 Dosenbieren',
-        src: null,
-        owner: null,
+        src: 'img/20210428_164756.jpg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },
@@ -259,8 +259,8 @@ export default {
       },
       {
         text: 'Trinke vor einem E-Scooter ein Bier der entsprechenden Farbe',
-        src: null,
-        owner: null,
+        src: 'img/20210428_195823.jpg',
+        owner: 'DR',
         color: '#CCDD12',
         dialog: false
       },
